@@ -1,0 +1,152 @@
+!  7 PAR  d
+! enter
+keycode 51  =  q Q  braceright braceright q Q 3 3 4 4 5 5
+
+keycode 112 = v V  plus plus 
+keycode 79  = d D backslash  backslash  e r t y
+keycode 80  = l L  greater greater e r t y
+keycode 81  = j J   plus plus  e r t y
+keycode 57  = z Z  e r t y
+
+! c t s r n m
+keycode 36 = c C  at at 
+keycode 117  = t T at at
+keycode 83  = s S  at at e r t y
+keycode 84  = r R parenright parenright e r t y
+keycode 85  = n N question question e r t y
+keycode 86  = m M  M  M  M
+
+
+! q up g h f
+!keycode 127  = Return
+keycode 127  = U2665
+keycode 87  = g G percent  percent percent e r t y
+keycode 88  = h H  grave grave e r t y
+keycode 89  = f F  ugrave Ugrave e r t y
+
+! à ç
+keycode 29  = agrave Agrave i i e r t y
+keycode 30  = ccedilla Ccedilla i i e r t y
+
+! B é P O W
+keycode 24  = b B  asciitilde asciitilde
+keycode 25  = eacute Eacute  parenleft parenleft
+keycode 26  = p P equal equal
+keycode 27  = o O minus minus
+keycode 28  = w W quotedbl quotedbl 
+
+! A U I E , è
+keycode 38  = a A less less 0 0 1 1 2 2 3 3 4 4
+keycode 39  = u U bracketleft bracketleft
+keycode 40  = i I exclam exclam
+keycode 41  = e E underscore underscore
+keycode 42  = comma comma numbersign numbersign 
+keycode 43  = egrave Egrave dollar dollar
+
+! Y X : . K
+keycode 52  = y Y asciicircum asciicircum
+keycode 53  = x X bar bar
+keycode 54  = colon colon apostrophe apostrophe
+keycode 55  = period period  slash slash
+keycode 56  = k K asterisk asterisk
+
+ 
+
+! 0 1 2 3 4 5 
+keycode 11  = 0 0  ampersand ampersand 
+keycode 12  = 1 1  braceleft braceleft 3 3 4 4 5 5
+keycode 13  = 2 2  semicolon semicolon
+keycode 14  = 3 3  bracketright bracketright
+keycode 15  = 4 4
+keycode 49    = 5 5
+
+! 6 7 8 9
+keycode 119 = 6 6 
+keycode 77  = 7 7
+keycode 106 = 8 8 
+keycode 69  = 9 9
+
+! keycode   =
+clear Lock
+remove mod2 = 7
+
+
+! mod3 altgr
+keycode  108 = a
+keycode  105 = ISO_Level3_Shift
+remove control =  ISO_Level3_Shift
+
+keycode  66 = Escape
+!  shift
+remove shift = Shift_L
+remove shift = Shift_R
+keycode  50 = a
+keycode  62 = U2665
+keycode  10 = Shift_L
+keycode  82 = Shift_R
+add shift = Shift_L
+add shift = Shift_R
+
+! control
+remove control = Control_L
+! tab 
+! inversion tab control pour asus
+keycode  23 = a
+keycode  104 = Tab
+
+keycode  37 = a
+
+keycode  23 = Control_L
+!keycode  104 = Control_L
+!keycode  75 = Control_L
+keycode  63 = Control_R
+add control = Control_L
+add control = Control_R
+     
+ 
+! mod2 alt
+! modifcation pour asus protable alt refuse de composer avec tab
+remove mod1 = Alt_L
+keycode  64 = Page_Down 
+keycode  37 = Alt_L
+
+add mod1 = Alt_L
+
+
+! mod4 super
+remove mod4 = Super_L
+keycode  133 = Page_Up
+keycode  90 =  Home
+keycode  91 = End
+
+remove control = ISO_Level3_Shift
+
+!keycode  49 = Super_L
+!add mod4 = Super_L
+
+
+!ajoude symboles pour vim.
+keycode  50 = thorn U2648
+!keycode  94 = U2665
+keycode 35 = U2632
+keycode  94 = Super_L
+add mod4 =Super_L
+
+!
+!keycode  75 = Tab
+keycode  70 = VoidSymbol
+
+
+!
+!  modswitch pour asusux31
+!
+keycode 62 = Mode_switch
+keycode 105 = Mode_switch
+
+!pour la pedale
+keycode  75 = Return
+!keycode  74 = Return
+keycode  108 = VoidSymbol
+!keycode  78 = Return
+keycode  76 = Return
+

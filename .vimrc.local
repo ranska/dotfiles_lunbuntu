@@ -1,0 +1,65 @@
+colorscheme jellybeans
+
+set noswapfile  "70's are gone baby!
+set nobackup
+set nowb
+
+
+set t_Co=256           " terminal supports 256 colors
+set nu
+set sts=2
+set sw=2
+
+syntax enable
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+"set background=light
+set background=dark
+"let g:solarized_visibility= "high"
+"colorscheme railscasts3 " Color scheme
+""colorscheme solarized " Color scheme
+"colorscheme default " Color scheme
+colorscheme jellybeans " Color scheme
+hi Normal ctermbg=NONE 
+" used for transparent bg
+hi Search cterm=none ctermbg=4 ctermfg=15
+filetype indent on " Autoindentacion
+filetype plugin on " Enable filetype-specific pluginsx
+set nospell
+" http://stackoverflow.com/questions/10963536/why-does-vim-highlight-some-words
+
+
+
+" greek stuff:
+" always edit in utf-8:
+set encoding=utf-8
+" but be ready to change encoding with a couple of shortcuts:
+" map _u :set encoding=utf-8
+
+let mapleader=" "
+map <F2> :FufCoverageFile<CR>
+map! ç <Esc> :w<CR>
+map ç :w<CR>
+map à :q<CR>
+map! à <Esc> :q<CR>
+
+map è :NERDTreeToggle<CR> 
+map è :NERDTreeToggle<CR> 
+map ♥ cw
+map! ♥ <C-p>
+map ù cw
+map! ù <C-p>
+map l >>
+map h <<
+map k gT
+map j gt
+map! ☲ <Esc> :w<CR>
+map ☲  :w<CR>
+ map é $
+"map! é <Esc> :w<CR>
+"map é  :w<CR>
+""let g:airline_powerline_fonts = 1
+au BufNewFile,BufRead *.rabl set filetype=ruby
+UnBundle 'myusuf3/numbers.vim'
+Bundle 'slim-template/vim-slim'
+Bundle 'skammer/vim-css-color'
